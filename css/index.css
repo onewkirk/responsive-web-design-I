@@ -1,3 +1,214 @@
-/* Use your own code or past solution for Great Idea Web Page CSS here! */
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
 
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+	margin-left: 23%;
+	margin-right: 23%
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* Set every element's box-sizing to border-box */
+* {
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+    font-family: 'Titillium Web', sans-serif;
+}
+
+h1, h2, h3, h4, h5 {
+    font-family: 'Bangers', cursive;
+    letter-spacing: 1px;
+    margin-bottom: 15px;
+}
+
+.top_nav a{
+	color: gray;
+	padding: 35px;
+	padding-left: 5%;
+	display: inline-block;
+	width: inherit;
+}
+.top_nav {
+	display: flex;
+	justify-content: space-evenly;
+}
+
+
+.section1 {
+	display: flex;
+	justify-content: center;
+	font-size: 70px;
+	padding-top: 5px;
+}
+
+.div1 {
+	display: flex;
+	justify-content: center;
+	flex-direction: column;
+}
+
+.div1 .getStarted {
+	margin-top: 35px;
+	width: 150px;
+}
+
+.topImage {
+	padding:70px;
+	height: 600;
+	width: 600;
+	margin-left: 50px;
+}
+
+.section1 a {
+	border-style: solid;
+	border-color: black;
+	color: black;
+	border-width: 2px;
+	display: inline;
+	padding: 7px;
+	margin-left: 20px;
+}
+
+.section2{
+	display: flex;
+	justify-content: center;
+	border: 3px solid white;
+	border-top: 3px solid black;
+    height: 15%;
+    padding-top: 3%;
+}
+
+.features {
+	margin-right: 25px;
+}
+
+.midImgSec {
+	display: flex;
+    justify-content: center;
+    margin-top: 3%;
+}
+
+.midImgSec .middle-img {
+	height: 15%;
+}
+
+.section3 {
+	display: flex;
+	justify-content: space-around;
+	border-bottom: 2px solid black;
+	height: 23%;
+    width: 100%;
+    padding-top: 5%;
+}
+
+.section3 div{
+    width: 28%;
+}
+.contact, a{
+	color: black;
+	display: block;
+	font-family: 'Titillium Web', sans-serif;
+	border-color: black;
+    font-size: 18px;
+    padding-top: 5%;
+}
+
+footer {
+	padding: 60px;
+	text-align: center;
+}
+
+/* Service Page CSS*/
+
+.serv {
+	border-bottom: 2px solid black;
+	padding: 25px;
+	margin: 25px
+}
+.serv p {
+	width: 950px;
+}
+.serv img {
+	width: 950px;
+	padding-bottom: 20px;
+}
+
+.servLinks {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	border-bottom: 3px solid gray;
+	margin-bottom: 25px;
+	padding-bottom: 15px;
+}
+
+.servLinks div {
+	background-color: rgb(231, 227, 227);
+	border: 1px solid black;
+	width: 45%;
+	margin: 25px;
+	padding: 10px;
+}
+.servLinks div a {
+	background-color: white;
+	border: 1px solid black;
+	padding: 10px;
+	display: inline-block;
+	margin-top: 10px;
+}
+
+.servOther {
+	display: flex;
+	justify-content: space-between;
+}
+
+.servOther ul{
+	list-style-type: square;
+	padding: 10px;
+	margin-left: 20px;
+}
 
