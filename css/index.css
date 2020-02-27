@@ -65,18 +65,35 @@ h1, h2, h3, h4, h5 {
     margin-bottom: 15px;
 }
 
-.top_nav a{
-	color: gray;
-	padding: 35px;
-	padding-left: 5%;
-	display: inline-block;
-	width: inherit;
-}
 .top_nav {
-	display: flex;
-	justify-content: space-evenly;
+    display: flex;
+    width: 100%;
+    margin-left: 20%;
+    margin-right: 25%;
 }
 
+.top_nav a{
+	color: gray;
+	padding: 10%;
+	padding-left: 5%;
+	display: inline-block;
+    width: 50%;
+}
+
+.nav_links {
+	display: flex;
+    justify-content: space-evenly;
+    width:40%;
+    margin-right: 3%;
+    position: relative;
+}
+
+.logo {
+    width: 10%;
+    position: absolute;
+    right:25%;
+    padding-top: 2%;
+}
 
 .section1 {
 	display: flex;
@@ -133,7 +150,8 @@ h1, h2, h3, h4, h5 {
 }
 
 .midImgSec .middle-img {
-	height: 15%;
+    height: 15%;
+    width: 100%;
 }
 
 .section3 {
@@ -143,6 +161,7 @@ h1, h2, h3, h4, h5 {
 	height: 23%;
     width: 100%;
     padding-top: 5%;
+    margin-bottom: 3%;
 }
 
 .section3 div{
@@ -212,3 +231,88 @@ footer {
 	margin-left: 20px;
 }
 
+/*Media query 800px*/
+@media (max-width: 800px){
+    .topImage {
+    display: none;
+    }
+
+    .div1 {
+        align-items: center;
+        align-content: center;
+    }
+
+    .top_nav{
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .nav_links {
+        padding-top: 15%;
+    
+    }
+
+    .top_nav .logo{
+        width: 30%;
+       
+    }
+    .section2, .section3 {
+        font-size: 60%;
+    }
+    .contact {
+        font-size: 60%;
+    }
+}
+
+
+/*Media query 500px*/
+@media (max-width: 500px){
+    .top_nav .logo {
+        right: 35%;
+    }
+    .nav_links {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        padding-right: 35%;
+    }
+
+    .nav_links a{
+        border-top: 1px solid gray;
+        display: block;
+    }
+
+    .nav_links .contact_link{
+        border-bottom: 1px solid gray;
+    }
+
+    .section1 .getStarted{
+        font-size: 30%;
+        margin-bottom: 5%;
+        margin-top: 0%;
+    }
+
+    .section2, .section3 {
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+    .nav_links .links {
+        width: 100%;
+        text-align: center;
+    }
+
+    .section1 div {
+        font-size: 55%;
+    }
+    .section3 div{
+        width: 100%;
+    }
+
+    .contact a{
+        font-size: 100%;
+    }
+    footer{
+        font-size: 60%;
+    }
+}
