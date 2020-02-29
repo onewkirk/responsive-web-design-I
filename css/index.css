@@ -245,16 +245,18 @@ footer {
     .top_nav{
         display: flex;
         flex-wrap: wrap;
+        justify-content: center;
+        margin-left: auto;
     }
 
     .nav_links {
         padding-top: 15%;
-    
     }
 
     .top_nav .logo{
         width: 30%;
-       
+        margin-right: auto;
+        position: absolute;
     }
     .section2, .section3 {
         font-size: 60%;
@@ -267,6 +269,10 @@ footer {
 
 /*Media query 500px*/
 @media (max-width: 500px){
+    .top_nav {
+        text-align: center;
+        padding-left: 30%;
+    }
     .top_nav .logo {
         right: 35%;
     }
@@ -275,13 +281,12 @@ footer {
         flex-direction: column;
         width: 100%;
         padding-right: 35%;
-        border-bottom: 2px solid gray;
+        margin-top: 10%;
     }
 
-    .nav_links a{
+    .nav_links .links{
         border-top: 2px solid gray;
         display: block;
-        background-color: chartreuse;
     }
 
     .section1 .getStarted{
@@ -302,9 +307,11 @@ footer {
 
     .section1 div {
         font-size: 55%;
+        font-size: 80%;
     }
     .section3 div{
         width: 100%;
+        font-size: 80%;
     }
 
     .contact a{
